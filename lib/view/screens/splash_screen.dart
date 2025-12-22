@@ -37,14 +37,14 @@ class SplashScreen extends StatelessWidget {
                 'Track your daily mantra chanting\nwith peace and devotion',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 22,
                   color: textSecondary,
                 ),
               ),
               const SizedBox(height: 50,),
               ElevatedButton(
                 onPressed: (){
-                  Navigator.pushReplacementNamed(context, "/home");
+                  Navigator.pushReplacementNamed(context, "/root");
                 }, 
                 style: ElevatedButton.styleFrom(
                   backgroundColor: divineGold,
