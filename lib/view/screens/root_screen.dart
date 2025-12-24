@@ -63,7 +63,7 @@ class _RootScreenState extends State<RootScreen> {
       onTap: (value) {
         togglePagesIndex(value);
       },
-      selectedItemColor: saffronMid,
+      selectedItemColor: textPrimary,
       ),
     );
   }

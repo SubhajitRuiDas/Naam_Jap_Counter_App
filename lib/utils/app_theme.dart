@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:naam_jap_counter_app/utils/constants.dart';
 
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
@@ -6,9 +7,12 @@ class AppTheme {
     primaryColor: const Color(0xFFFF9800),
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(
-      backgroundColor: Color(0xFFFF9800),
+      backgroundColor: malaLightBrown,
       foregroundColor: Colors.white,
     ),
+    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+      backgroundColor: malaLightBrown,
+    )
   );
 
   static ThemeData darkTheme = ThemeData(

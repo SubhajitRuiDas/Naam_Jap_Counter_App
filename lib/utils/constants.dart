@@ -23,3 +23,13 @@ const LinearGradient saffronGradient = LinearGradient(
     saffronMid,
   ],
 );
+
+const RadialGradient glowGradient = RadialGradient(
+  center: Alignment.center,
+  radius: 0.6,
+  colors: [
+    // divineGold,
+    saffronLight,
+    malaBrown,
+  ],
+);
