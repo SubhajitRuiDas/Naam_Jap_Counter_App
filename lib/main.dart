@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:naam_jap_counter_app/utils/app_theme.dart';
 import 'package:naam_jap_counter_app/view/screens/home_screen.dart';
 import 'package:naam_jap_counter_app/view/screens/root_screen.dart';
@@ -7,7 +8,11 @@ import 'package:naam_jap_counter_app/viewmodel/theme_provider.dart';
 import 'package:naam_jap_counter_app/viewmodel/track_jap_count_provider.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async{
+  await Hive.initFlutter();
+  await Hive.openBox("japBox");
+  await Hive.openBox("japHistoryBox");
+
   runApp(
     MultiProvider(
       providers: [
